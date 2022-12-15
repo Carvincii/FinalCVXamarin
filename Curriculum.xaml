@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="confe.Curriculum"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#FF00BFFF">
+            <StackLayout>
+                <Image Source="https://ibb.co/2cQZ3SV"
+                       Margin="0,35,0,5"/>
+                <Label x:Name="F_nombre"
+                       FontAttributes="Italic"
+                       HorizontalOptions="Center"
+                       FontSize="20"
+                       TextColor="Black"/>
+                <Label x:Name="F_ocupacion"
+                       HorizontalOptions="Center"
+                       FontSize="10"
+                       TextColor="Black"/>
+            </StackLayout>
+            <Frame BackgroundColor="Azure"
+                   Margin="20"
+                   CornerRadius="20"
+                   HasShadow="False">
+                <StackLayout>
+                    <Label Text="Contacto" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label x:Name="F_email"/>
+                            <Label x:Name="F_telefono"/>
+                            <Label x:Name="F_pais"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Idiomas" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Español: Nativo"/>
+                            <Label x:Name="F_level"/>
+                            <Label Text="Ingles: Avanzado (C1)"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Aptitudes" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Liderazgo"/>
+                            <Label Text="Tenacidad"/>
+                            <Label Text="Responsable"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Hobbies" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Programar"/>
+                            <Label Text="Leer"/>
+                            <Label Text="correr"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#FF006400"
+                       Margin="20"
+                       CornerRadius="20"
+                       HasShadow="False">
+                <StackLayout >
+                    <Label Text="Perfil" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label x:Name="F_edad"/>
+                            <Label x:Name="F_perfil"/>
+                        </StackLayout>
+                    </Frame>
+                    <Label Text="Experiencia Laboral" FontAttributes="Bold"/>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Emprendedor" FontAttributes="Italic"/>
+                            <Label Text="* Coordinador General de la pasotral San Jose"/>
+                            <Label Text="* Atleta Olimpico"/>
+                            <Label Text="* Programdor de eventos"/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Regresar"
+                            x:Name="btnregresar"
+                            Clicked="btnregresar_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
